@@ -1,0 +1,3 @@
+mvn jetty:run
+
+C:\Users\admin\AppData\Local\Jenkins\.jenkins\workspace\Maven-Project\target\helloworld-webapp-1.0-SNAPSHOT.war
