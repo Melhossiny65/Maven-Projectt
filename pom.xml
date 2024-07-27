@@ -17,6 +17,26 @@
            <version>4.0.1</version>
            <scope>provided</scope>
        </dependency>
+       <!-- Add other dependencies here if needed -->
    </dependencies>
 
+   <build>
+       <plugins>
+           <!-- Maven Jetty Plugin -->
+           <plugin>
+               <groupId>org.eclipse.jetty</groupId>
+               <artifactId>jetty-maven-plugin</artifactId>
+               <version>9.4.44.v20210927</version> <!-- Use the latest version -->
+               <configuration>
+                   <httpConnector>
+                       <port>9090</port> <!-- Change port number to 9090 or any available port -->
+                   </httpConnector>
+                   <webApp>
+                       <contextPath>/</contextPath>
+                   </webApp>
+               </configuration>
+           </plugin>
+           <!-- Add other plugins here if needed -->
+       </plugins>
+   </build>
 </project>
